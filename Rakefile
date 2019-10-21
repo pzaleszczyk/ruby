@@ -1,5 +1,5 @@
 task default: %w[test]
 
 task :test do
-  bundle exec -n0 parallel_test test/*.rb
+  bundle exec -n1 parallel_test test/*
 end
