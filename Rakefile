@@ -1,5 +1,8 @@
 task default: %w[test]
 
-task :test do
-  bundle exec -n1 parallel_test test/*
+
+Rake::TestTask.new(:test) do |t|
+  t.libs << "test"
+  t.libs << "lib"
+  t.test_files = FileList["test/*"]
 end
