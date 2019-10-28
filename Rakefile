@@ -1,8 +1,6 @@
-task default: %w[test]
 
+task default: "test"
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << "test"
-  t.libs << "lib"
-  t.test_files = FileList["test/*"]
+Rake::TestTask.new do |task|
+ task.pattern = ‘test/*_test.rb’
 end
