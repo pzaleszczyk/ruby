@@ -1,20 +1,14 @@
-require 'minitest/autorun'
-require_relative '../lib/two_fer'
+require_relative '../lib/two_fer.rb'
 
-# Common test data version: 1.2.0 4fc1acb
-class TwoFerTest < Minitest::Test
-  def test_no_name_given
-    #skip
-    assert_equal "One for you, one for me.", TwoFer.two_fer
-  end
+RSpec.describe HelloWorld do
 
-  def test_a_name_given
-    #skip
-    assert_equal "One for Alice, one for me.", TwoFer.two_fer("Alice")
-  end
-
-  def test_another_name_given
-    #skip
-    assert_equal "One for Bob, one for me.", TwoFer.two_fer("Bob")
-  end
+	it "No name given" do
+		expect(TwoFerTest.two_fer()).to eq("One for you, one for me.")
+	end
+	it "Alice" do
+		expect(TwoFerTest.two_fer("Alice")).to eq("One for Alice, one for me.")
+	end
+	it "Bob" do
+		expect(TwoFerTest.two_fer("Bob")).to eq("One for Bob, one for me.")
+	end
 end
