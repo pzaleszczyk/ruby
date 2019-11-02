@@ -1,25 +1,21 @@
 class TwelveDays
-  DAYS = ['first', 'second', 'third', 'fourth', 'fivth', 'sixth', 'seventh', 'eighth', 'nineth', 'tenth', 'eleventh', 'twelfth']
-  VERSES = ['and a Partridge in a Pear Tree.', 'two Turtle Doves,', 'three French Hens,', 'four Calling Birds,', 'five Gold Rings,', 'six Geese-a-Laying,', 'seven Swans-a-Swimming,', 'eight Maids-a-Milking,', 'nine Ladies Dancing,', 'ten Lords-a-Leaping,', 'eleven Pipers Piping,', 'twelve Drummers Drumming,']
+  DAYS = %w(first second third fourth fifth sixth seventh eighth ninth tenth eleventh twelfth)
+  GIFTS = ["and a Partridge in a Pear Tree", "two Turtle Doves", "three French Hens", "four Calling Birds", "five Gold Rings", "six Geese-a-Laying", "seven Swans-a-Swimming", "eight Maids-a-Milking", "nine Ladies Dancing", "ten Lords-a-Leaping", "eleven Pipers Piping", "twelve Drummers Drumming"]
 
   def self.song
-    array = []
-    DAYS.each_with_index do | val, index|
-      array << index
-      verse_sum = array.map do |a|
-        VERSES[a]
-      end
-      insert = verse_sum.reverse.join(' ')
+    (0...12).map(&method(:verse)).join("\n\n") + "\n"
+  end
 
-      if index.zero?
-        puts "On the #{DAYS[index]} day of Christmas my true love gave to me: a Partridge in a Pear Tree."
-        puts ""
-      else
-        puts "On the #{DAYS[index]} day of Christmas my true love gave to me: #{insert} "
-        puts ""
-      end
-    end
+  def self.gifts(day)
+    return GIFTS[0][4..-1] if day == 1
+    (0...day).map(&method(:gift)).reverse.join(", ")
+  end
+
+  def self.gift(num)
+    GIFTS[num]
+  end
+
+  def self.verse(day)
+    "On the #{DAYS[day]} day of Christmas my true love gave to me: #{gifts(day + 1)}."
   end
 end
-
-TwelveDays.song
