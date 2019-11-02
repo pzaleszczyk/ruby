@@ -1,7 +1,7 @@
 
 require_relative("../lib/bowling")
 
-RSpec.describe Game do
+RSpec.describe "Bowling" do
   it("should be able to score a game with all zeros") do
     game = Game.new
     rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
