@@ -4,7 +4,7 @@ require_relative("../lib/robot_name")
 RSpec.describe Robot do
   NAME_REGEXP = /^[A-Z]{2}\d{3}$/
   before { Robot.forget }
-  it("can create a robot") { refute_nil(Robot.new) }
+  it("can create a robot") { expect(Robot.new).to_not be_nil }
   it("has name") { expect(Robot.new.name).to(match(NAME_REGEXP)) }
   it("name sticks") do
     robot = Robot.new
