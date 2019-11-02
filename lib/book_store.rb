@@ -38,4 +38,4 @@ class BookStore
         total
       end
     end
-  end
+end
