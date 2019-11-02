@@ -1,46 +1,31 @@
+# Sing the Twelve Days of Christmas
 class TwelveDays
-  GIFTS = [
-    'twelve Drummers Drumming,',
-    'eleven Pipers Piping,',
-    'ten Lords-a-Leaping,',
-    'nine Ladies Dancing,',
-    'eight Maids-a-Milking,',
-    'seven Swans-a-Swimming,',
-    'six Geese-a-Laying,',
-    'five Gold Rings,',
-    'four Calling Birds,',
-    'three French Hens,',
-    'two Turtle Doves, and',
-    'a Partridge in a Pear Tree'
-  ]
-
-  NUM_TO_WORD = {
-    1  => 'first',
-    2  => 'second',
-    3  => 'third',
-    4  => 'fourth',
-    5  => 'fifth',
-    6  => 'sixth',
-    7  => 'seventh',
-    8  => 'eighth',
-    9  => 'ninth',
-    10 => 'tenth',
-    11 => 'eleventh',
-    12 => 'twelfth'
+  VERSION = 1
+  PREFIX = "On the %{nth} day of Christmas my true love gave to me, %{items}\n"
+  LYRICS = {
+    first: 'a Partridge in a Pear Tree.',
+    second: 'two Turtle Doves',
+    third: 'three French Hens',
+    fourth: 'four Calling Birds',
+    fifth: 'five Gold Rings',
+    sixth: 'six Geese-a-Laying',
+    seventh: 'seven Swans-a-Swimming',
+    eighth: 'eight Maids-a-Milking',
+    ninth: 'nine Ladies Dancing',
+    tenth: 'ten Lords-a-Leaping',
+    eleventh: 'eleven Pipers Piping',
+    twelfth: 'twelve Drummers Drumming'
   }
-
-  def self.verse(num)
-    "On the #{NUM_TO_WORD[num]} day of Christmas my true love gave to me, " \
-      "#{GIFTS.last(num).join(' ')}.\n"
-  end
-
-  def self.verses(start, finish)
-    (start..finish).reduce('') do |song, verse_num|
-      song << "#{verse(verse_num)}\n"
-    end
-  end
+  DAYS = LYRICS.keys
 
   def self.song
-    verses(1, 12)
+    (0...DAYS.size).map { |i| verse(i) }.join("\n")
+  end
+
+  def self.verse(n)
+    items = n.downto(0).map { |i| LYRICS[DAYS[i]] }
+    items[-1] = items[-1].sub(/^/, 'and ') if n > 0
+    items_phrase = items.join(', ')
+    PREFIX % { nth: DAYS[n], items: items_phrase }
   end
 end
