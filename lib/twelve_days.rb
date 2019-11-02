@@ -1,4 +1,4 @@
-class TwelveDaysSong
+class TwelveDays
   GIFTS = [
     'twelve Drummers Drumming,',
     'eleven Pipers Piping,',

@@ -1,4 +1,4 @@
-class OCR
+class OcrNumbers
   attr_reader :text
 
   def self.initialize(text)
