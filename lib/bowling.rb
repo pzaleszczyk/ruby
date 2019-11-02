@@ -56,7 +56,3 @@ class Game
 
   class BowlingError < StandardError; end
 end
-
-module BookKeeping
-  VERSION = 3
-end

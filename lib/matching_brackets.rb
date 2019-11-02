@@ -19,7 +19,3 @@ class Brackets
     stack.empty?
   end
 end
-
-module BookKeeping
-  VERSION = 2
-end

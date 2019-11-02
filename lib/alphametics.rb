@@ -22,7 +22,3 @@ class Alphametics
     eval(string)
   end
 end
-
-class BookKeeping
-  VERSION = 2
-end
