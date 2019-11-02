@@ -8,6 +8,7 @@ class Alphametics
   def initialize(puzzle)
     @puzzle = puzzle
     @magnitudes = []
+	@coefficients = nil
   end
 
   attr_reader :puzzle

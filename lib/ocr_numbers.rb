@@ -8,7 +8,7 @@ class OcrNumbers
         if text[0].length%3 != 0
             raise ArgumentError.new("messed up")
         end
-        j = 0
+        #j = 0
         i = 0
         output = ""
         if a == 1
