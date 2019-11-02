@@ -1,4 +1,6 @@
+
 require_relative("../lib/book_store")
+
 RSpec.describe BookStore do
   it("only a single book") do
     basket = [1]

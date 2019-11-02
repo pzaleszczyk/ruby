@@ -1,4 +1,6 @@
+
 require_relative("../lib/alphametics")
+
 RSpec.describe Alphametics do
   it("puzzle with three letters") do
     puzzle = "I + BB == ILL"
