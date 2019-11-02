@@ -1,5 +1,5 @@
 class Alphametics
-  def solve(string)
+  def self.solve(string)
     @string = string.gsub('^', '**')
 
     possible_maps.find { |map| puzzle_solved?(map) }
@@ -7,7 +7,7 @@ class Alphametics
 
   private
 
-  def possible_maps
+  def self.possible_maps
     uniq_chars = @string.scan(/[[:alpha:]]/).uniq
     permutations = (0..9).to_a.permutation(uniq_chars.length)
 
@@ -16,7 +16,7 @@ class Alphametics
     end
   end
 
-  def puzzle_solved?(map)
+  def self.puzzle_solved?(map)
     string = @string.gsub(/[[:alpha:]]/, map)
     return false if string =~ /\b0\d+/
     eval(string)

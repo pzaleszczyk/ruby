@@ -1,11 +1,11 @@
 class OCR
   attr_reader :text
 
-  def initialize(text)
+  def self.initialize(text)
     @text = text
   end
 
-  def convert
+  def self.convert
     text.
       split("\n").
       each_slice(4).
@@ -15,7 +15,7 @@ class OCR
 
   private
 
-  def numbers(line)
+  def self.numbers(line)
     line.
       map { |row| row.chars.each_slice(3).to_a }.
       transpose.
@@ -23,7 +23,7 @@ class OCR
       join
   end
 
-  def digit(pattern)
+  def self.digit(pattern)
     digits = {
       " _ | ||_|   " => 0,
       "     |  |   " => 1,

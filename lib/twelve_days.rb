@@ -29,18 +29,18 @@ class TwelveDaysSong
     12 => 'twelfth'
   }
 
-  def verse(num)
+  def self.verse(num)
     "On the #{NUM_TO_WORD[num]} day of Christmas my true love gave to me, " \
       "#{GIFTS.last(num).join(' ')}.\n"
   end
 
-  def verses(start, finish)
+  def self.verses(start, finish)
     (start..finish).reduce('') do |song, verse_num|
       song << "#{verse(verse_num)}\n"
     end
   end
 
-  def sing
+  def self.sing
     verses(1, 12)
   end
 end
