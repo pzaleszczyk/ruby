@@ -55,7 +55,3 @@ class BookStore
     set.size * SINGLE_PRICE * (1 - DISCOUNT_MAP[set.size])
   end
 end
-
-class BookKeeping
-  VERSION = 0
-end
