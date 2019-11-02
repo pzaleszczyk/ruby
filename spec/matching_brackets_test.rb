@@ -1,7 +1,7 @@
 
 require_relative("../lib/matching_brackets")
 
-RSpec.describe MatchingBrackets do
+RSpec.describe Brackets do
   it("paired square brackets") { expect(Brackets.paired?("[]")).to(eq(true)) }
   it("empty string") { expect(Brackets.paired?("")).to(eq(true)) }
   it("unpaired brackets") { expect(Brackets.paired?("[[")).to(eq(false)) }
