@@ -1,12 +1,25 @@
 class Robot
-  ALL_NAMES = ("AA000".."ZZ999").to_a.shuffle
+  NAMES = ('AA000'..'ZZ999')
 
   def self.forget
-    @@possible_names = ("AA000".."ZZ999").to_a.shuffle
+    @@names = nil
   end
 
+  private 
+
+  def initialize
+    reset
+  end
+
+  def next_name
+    @@names ||= NAMES.to_enum
+    @@names.next
+  end
+
+  public
+
   def name
-    @name ||= @@possible_names.shift
+    @name ||= next_name
   end
 
   def reset
