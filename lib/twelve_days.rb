@@ -40,7 +40,7 @@ class TwelveDays
     end
   end
 
-  def self.sing
+  def self.song
     verses(1, 12)
   end
 end
