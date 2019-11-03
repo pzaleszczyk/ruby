@@ -1,1 +1,1 @@
-# ruby
+https://travis-ci.org/pzaleszczyk/ruby/jobs/606778881
