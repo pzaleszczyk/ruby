@@ -2,6 +2,7 @@
 require_relative("../lib/pangram")
 
 RSpec.describe Pangram do
+ describe ".pangram" do
   it("sentence empty") do
     sentence = ""
     result = Pangram.pangram?(sentence)
@@ -52,4 +53,5 @@ RSpec.describe Pangram do
     result = Pangram.pangram?(sentence)
     expect(result).to(be_falsey)
   end
+ end
 end

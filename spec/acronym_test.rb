@@ -2,6 +2,7 @@
 require_relative("../lib/acronym")
 
 RSpec.describe Acronym do
+ describe ".abbreviate" do
   it("basic") do
     expect(Acronym.abbreviate("Portable Network Graphics")).to(eq("PNG"))
   end
@@ -23,4 +24,5 @@ RSpec.describe Acronym do
   it("consecutive delimiters") do
     expect(Acronym.abbreviate("Something - I made up from thin air")).to(eq("SIMUFTA"))
   end
+ end
 end

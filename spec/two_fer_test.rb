@@ -1,6 +1,7 @@
 require_relative '../lib/two_fer.rb'
 
 RSpec.describe TwoFer do
+ describe ".two_fer" do
 	it "No name given" do
 		expect(TwoFer.two_fer()).to eq("One for you, one for me.")
 	end
@@ -10,4 +11,5 @@ RSpec.describe TwoFer do
 	it "Bob" do
 		expect(TwoFer.two_fer("Bob")).to eq("One for Bob, one for me.")
 	end
+ end
 end

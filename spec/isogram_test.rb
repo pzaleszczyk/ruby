@@ -2,6 +2,7 @@
 require_relative("../lib/isogram")
 
 RSpec.describe Isogram do
+describe ".isogram" do
   it("empty string") do
     input = ""
     expect(Isogram.isogram?(input)).to(eq(true))
@@ -54,4 +55,5 @@ RSpec.describe Isogram do
     input = "angola"
     expect(Isogram.isogram?(input)).to(eq(false))
   end
+ end
 end

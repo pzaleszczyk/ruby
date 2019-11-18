@@ -1,17 +1,12 @@
 {
   "RSpec": {
     "coverage": {
-      "C:/Users/Suchy/Exercism/ruby-master/spec/acronym_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/acronym_test.rb": [
         null,
         1,
         null,
         1,
         1,
-        1,
-        null,
-        1,
-        1,
-        null,
         1,
         1,
         null,
@@ -26,10 +21,17 @@
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/acronym.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/acronym.rb": [
         1,
         null,
         1,
@@ -38,10 +40,11 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/alphametics_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/alphametics_test.rb": [
         null,
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -97,10 +100,11 @@
         0,
         0,
         0,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/alphametics.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/alphametics.rb": [
         1,
         1,
         9,
@@ -184,15 +188,12 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/book_store_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/book_store_test.rb": [
         null,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        null,
         1,
         1,
         1,
@@ -248,10 +249,15 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/book_store.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/book_store.rb": [
         1,
         1,
         null,
@@ -294,10 +300,11 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/bowling_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/bowling_test.rb": [
         null,
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -479,9 +486,10 @@
         22,
         2,
         null,
+        null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/bowling.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/bowling.rb": [
         1,
         1,
         30,
@@ -541,17 +549,12 @@
         1,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/gigasecond_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/gigasecond_test.rb": [
         null,
         1,
         null,
         1,
         1,
-        1,
-        null,
-        1,
-        1,
-        null,
         1,
         1,
         null,
@@ -560,10 +563,17 @@
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/gigasecond.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/gigasecond.rb": [
         1,
         1,
         null,
@@ -572,8 +582,18 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/hello_world_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/hello_world_test.rb": [
         1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/hello_world.rb": [
         null,
         1,
         1,
@@ -581,70 +601,72 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/hello_world.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/high_scores_test.rb": [
+        null,
+        1,
         null,
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/high_scores_test.rb": [
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/high_scores.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/high_scores.rb": [
         1,
         1,
         10,
@@ -671,7 +693,7 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/house_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/house_test.rb": [
         null,
         1,
         null,
@@ -679,10 +701,12 @@
         1,
         1,
         1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/house.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/house.rb": [
         1,
         1,
         null,
@@ -708,15 +732,12 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/isogram_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/isogram_test.rb": [
         null,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        null,
         1,
         1,
         1,
@@ -764,10 +785,15 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/isogram.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/isogram.rb": [
         1,
         1,
         13,
@@ -777,10 +803,11 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/matching_brackets_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/matching_brackets_test.rb": [
         null,
         1,
         null,
+        1,
         1,
         2,
         2,
@@ -821,10 +848,11 @@
         1,
         1,
         1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/matching_brackets.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/matching_brackets.rb": [
         1,
         null,
         1,
@@ -847,12 +875,12 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/ocr_numbers_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/ocr_numbers_test.rb": [
         null,
         1,
         null,
         1,
-        null,
+        1,
         1,
         1,
         1,
@@ -920,10 +948,11 @@
         1,
         1,
         1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/ocr_numbers.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/ocr_numbers.rb": [
         1,
         1,
         17,
@@ -991,16 +1020,12 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/pangram_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/pangram_test.rb": [
         null,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        1,
-        null,
         1,
         1,
         1,
@@ -1045,30 +1070,41 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/pangram.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/pangram.rb": [
         1,
         1,
         10,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/robot_name_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/robot_name_test.rb": [
         null,
         1,
         null,
         1,
         1,
         10,
+        1,
         2,
+        null,
+        1,
         2,
         1,
         1,
         1,
         1,
         null,
+        null,
+        1,
         1,
         1,
         1,
@@ -1117,9 +1153,10 @@
         676001,
         676001,
         null,
+        null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/robot_name.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/robot_name.rb": [
         1,
         1,
         null,
@@ -1149,15 +1186,12 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/say_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/say_test.rb": [
         null,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        null,
         1,
         1,
         1,
@@ -1205,18 +1239,23 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        2,
         null,
         1,
         1,
         2,
         null,
-        1,
-        1,
-        2,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/say.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/say.rb": [
         1,
         null,
         1,
@@ -1266,15 +1305,12 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/sum_of_multiples_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/sum_of_multiples_test.rb": [
         null,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        null,
         1,
         1,
         1,
@@ -1330,10 +1366,15 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/sum_of_multiples.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/sum_of_multiples.rb": [
         1,
         1,
         15,
@@ -1359,7 +1400,7 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/twelve_days_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/twelve_days_test.rb": [
         null,
         1,
         null,
@@ -1368,10 +1409,12 @@
         1,
         1,
         1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/twelve_days.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/twelve_days.rb": [
         1,
         1,
         1,
@@ -1394,22 +1437,24 @@
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/spec/two_fer_test.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/spec/two_fer_test.rb": [
         1,
         null,
         1,
         1,
         1,
-        null,
-        1,
         1,
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
         null,
         null
       ],
-      "C:/Users/Suchy/Exercism/ruby-master/lib/two_fer.rb": [
+      "C:/Users/Suchy-Laptop/RUBY-GIT/ruby/lib/two_fer.rb": [
         1,
         1,
         3,
@@ -1417,6 +1462,6 @@
         null
       ]
     },
-    "timestamp": 1572797085
+    "timestamp": 1574078583
   }
 }

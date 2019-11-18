@@ -2,6 +2,7 @@
 require_relative("../lib/bowling")
 
 RSpec.describe Game do
+ describe ".score/.roll" do
   it("should be able to score a game with all zeros") do
     game = Game.new
     rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -181,5 +182,6 @@ RSpec.describe Game do
     rolls = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 3, 2]
     rolls.each { |pins| game.roll(pins) }
     expect { game.roll(2) }.to(raise_error(Game::BowlingError))
-  end
+  end 
+ end
 end

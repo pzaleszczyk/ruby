@@ -2,6 +2,7 @@
 require_relative("../lib/book_store")
 
 RSpec.describe BookStore do
+ describe ".calculate_price" do
   it("only a single book") do
     basket = [1]
     expect(BookStore.calculate_price(basket)).to(eq(8.0))
@@ -62,4 +63,5 @@ RSpec.describe BookStore do
     basket = [1, 1, 2, 2, 3, 3, 4, 5, 1, 1, 2, 2, 3, 3, 4, 5]
     expect(BookStore.calculate_price(basket)).to(eq(102.4))
   end
+ end
 end

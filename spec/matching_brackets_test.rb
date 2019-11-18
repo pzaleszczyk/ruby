@@ -2,6 +2,7 @@
 require_relative("../lib/matching_brackets")
 
 RSpec.describe Brackets do
+ describe ".paired" do
   it("paired square brackets") { expect(Brackets.paired?("[]")).to(eq(true)) }
   it("empty string") { expect(Brackets.paired?("")).to(eq(true)) }
   it("unpaired brackets") { expect(Brackets.paired?("[[")).to(eq(false)) }
@@ -42,4 +43,5 @@ RSpec.describe Brackets do
     string = ("\\left(\\begin{array}{cc} \\frac{1}{3} & x\\ " + "\\mathrm{e}^{x} &... x^2 \\end{array}\\right)")
     expect(Brackets.paired?(string)).to(eq(true))
   end
+ end 
 end

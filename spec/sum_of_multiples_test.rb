@@ -2,6 +2,7 @@
 require_relative("../lib/sum_of_multiples")
 
 RSpec.describe SumOfMultiples do
+ describe ".to" do
   it("no multiples within limit") do
     sum_of_multiples = SumOfMultiples.new(3, 5)
     expect(sum_of_multiples.to(1)).to(eq(0))
@@ -62,4 +63,5 @@ RSpec.describe SumOfMultiples do
     sum_of_multiples = SumOfMultiples.new(2, 3, 5, 7, 11)
     expect(sum_of_multiples.to(10000)).to(eq(39614537))
   end
+ end
 end

@@ -2,6 +2,7 @@
 require_relative("../lib/say")
 
 RSpec.describe Say do
+ describe ".in_english" do
   it("zero") do
     number = 0
     expect(Say.new(number).in_english).to(eq("zero"))
@@ -62,4 +63,5 @@ RSpec.describe Say do
     number = 1000000000000
     expect { Say.new(number).in_english }.to(raise_error(ArgumentError))
   end
+ end
 end

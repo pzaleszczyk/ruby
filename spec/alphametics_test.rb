@@ -2,6 +2,7 @@
 require_relative("../lib/alphametics")
 
 RSpec.describe Alphametics do
+ describe ".solve" do
   it("puzzle with three letters") do
     puzzle = "I + BB == ILL"
     expected = { "B" => 9, "I" => 1, "L" => 0 }
@@ -57,4 +58,5 @@ RSpec.describe Alphametics do
     expected = { "A" => 1, "E" => 0, "F" => 5, "H" => 8, "I" => 7, "L" => 2, "O" => 6, "R" => 3, "S" => 4, "T" => 9 }
     assert_equal(expected, Alphametics.solve(puzzle))
   end
+ end
 end

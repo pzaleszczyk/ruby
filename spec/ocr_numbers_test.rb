@@ -2,7 +2,7 @@
 require_relative("../lib/ocr_numbers")
 
 RSpec.describe OcrNumbers do
-
+ describe ".convert" do
   it("recognizes 0") do
     input = [" _ ", "| |", "|_|", "   "].join("\n")
     expect(OcrNumbers.convert(input)).to(eq("0"))
@@ -71,4 +71,5 @@ RSpec.describe OcrNumbers do
     input = ["    _  _ ", "  | _| _|", "  ||_  _|", "         ", "    _  _ ", "|_||_ |_ ", "  | _||_|", "         ", " _  _  _ ", "  ||_||_|", "  ||_| _|", "         "].join("\n")
     expect(OcrNumbers.convert(input)).to(eq("123,456,789"))
   end
+ end
 end
